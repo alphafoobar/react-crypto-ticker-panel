@@ -1,0 +1,107 @@
+body{
+  background: #02253B;
+  color: #76ABCC;
+  font-family: sans-serif;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+.toolbar__input {
+  border: 2px solid #02253B;
+  background: #C1E2F7;
+  color: #02253B;
+  font-weight: bold;
+}
+
+.toolbar__button {
+  border: 2px solid #02253B;
+  background: #063C5E;
+  color: #D4D7D9;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+.tile {
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+  background-color: #063C5E;
+  margin: 3px 3px 0px 0px;
+  position: relative;
+}
+
+.tile__currency-pair-label {
+  margin: 2px 0 0 5px;
+  padding: 0;
+  color: #D4D7D9;
+  font-size: 10px;
+}
+
+.tile__box {
+  display: inline-block;
+  width: 80px;
+  margin: 2px 3px 3px 5px;
+  padding: 0 5px;
+}
+
+.tile__box--buy {
+  float: left;
+}
+
+.tile__box--sell {
+  float: right;
+}
+
+.tile__direction-label {
+  font-size: 9px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
+.tile__price-P1 {
+  font-size: 14px;
+}
+
+.tile__price-P2 {
+  font-size: 28px;
+  color: #D4D7D9;
+}
+
+.tile__price-P3 {
+  font-size: 14px;
+}
+
+.tile__fluctuation {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 40px;
+  display: inline-block;
+  color: #D4D7D9;
+  font-size: 16px;
+}
+
+.tile__fluctuation::before {
+  display: inline-block;
+  position: absolute;
+  height: 10px;
+  color: lightgreen;
+  content: "^";
+  text-align: right;
+  right: 0;
+  top: 0;
+}
+
+.tile__fluctuation.tile__fluctuation--down::before {
+  color: orange;
+  transform: translate(0, 6px) rotate(-180deg);
+}
